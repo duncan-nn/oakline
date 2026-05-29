@@ -1,0 +1,131 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/spacing' as *;
+@use '../abstracts/typography' as *;
+@use '../abstracts/radius' as *;
+
+// .statcard {
+//   padding: $space-5 $space-4;
+//   border-radius: $radius-md;
+//   background: $grey-shades-10;
+//   border: 1px solid $grey-shades-15;
+
+//   h3 {
+//     font-size: $font-size-2xl;
+//     font-weight: $font-weight-bold;
+//     color: $absolute-white;
+//     line-height: $line-height-base;
+//   }
+
+//   p {
+//     font-size: $font-size-md;
+//     font-weight: $font-weight-medium;
+//     color: $grey-shades-60;
+//     line-height: $line-height-base;
+//   }
+// }
+
+// .feature-card {
+//   position: relative;
+//   padding: $space-5;
+//   border-radius: $radius-md;
+
+//   background: $grey-shades-10;
+//   border: 1px solid $grey-shades-15;
+
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: $space-3;
+
+//   text-align: center;
+//   text-decoration: none;
+//   color: inherit;
+
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     border-color: rgba(124, 58, 237, 0.4);
+//     transform: translateY(-4px);
+//   }
+//   .iconWrapper {
+//     width: 56px;
+//     height: 56px;
+//     border-radius: 50%;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     // background: rgba(124, 58, 237, 0.1);
+//     border: 1px solid  $purple-shades-75;
+//     color: $purple-shades-75;
+//   }
+
+//   .title {
+//     font-size: $font-size-md;
+//     font-weight: $font-weight-semi-bold;
+//     color: $absolute-white;
+//     line-height: $line-height-base;
+//   }
+
+//   .arrow {
+//     position: absolute;
+//     top: 0px;
+//     right: 8px;
+//     font-size: 34px;
+//     color: $grey-shades-30;
+//   }
+// }
+
+
+// .property-card {
+//   background: $grey-shades-08;
+//   border: 1px solid $grey-shades-15;
+//   border-radius: 16px;
+//   overflow: hidden;
+//   transition: 0.3s;
+
+//   &:hover {
+//     transform: translateY(-4px);
+//   }
+
+//   .card__image {
+//     position: relative;
+//     height: 200px;
+//   }
+
+//   .card__content {
+//     padding: $space-4;
+//   }
+
+//   .card__title {
+//     font-size: 18px;
+//     font-weight: 600;
+//   }
+
+//   .card__description {
+//     font-size: 14px;
+//     color: $grey-shades-40;
+//     margin-top: $space-2;
+//   }
+
+//   .card__meta {
+//     display: flex;
+//     gap: $space-3;
+//     margin-top: $space-3;
+//     font-size: 13px;
+//     color: $grey-shades-40;
+//   }
+
+//   .card__footer {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: $space-4;
+//   }
+
+//   .card__price {
+//     font-size: 18px;
+//     font-weight: 600;
+//   }
+// }

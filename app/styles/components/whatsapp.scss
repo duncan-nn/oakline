@@ -1,0 +1,57 @@
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+@use '../abstracts/radius' as *;
+@use '../abstracts/spacing' as *;
+
+@keyframes blinker {
+  from {
+    opacity: 0.9;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+}
+.show-whatsapp-chat {
+  opacity: 1;
+  visibility: visible;
+}
+.hide-whatsapp-chat {
+  opacity: 0;
+  visibility: hidden;
+}
+.whatsappchat {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $grey-shades-15;
+  background-color: $grey-shades-10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  .whatsappchat-link {
+    .whatsappchat-icon-wrap {
+      .whatsappchat-icon {
+        color: #25d366;
+      }
+    }
+    .whatsappchat-icon-animation {
+      position: absolute;
+      right: 7px;
+      bottom: 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      background-color: red;
+    }
+    .blink {
+      animation: blinker 1.2s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+    }
+  }
+}
