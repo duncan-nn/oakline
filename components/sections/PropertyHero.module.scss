@@ -1,0 +1,59 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+@use "@/app/styles/abstracts/breakpoints" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-5;
+  padding: 15px 15px;
+  // border: 1px solid #fff;
+  @include breakpoint(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 30px;
+    margin-bottom: 0;
+  }
+
+  &__left {
+    margin-bottom: 10px;
+    @include breakpoint(md) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__title {
+    // font-size: $text-2xl;
+    // color: $absolute-white;
+  }
+
+  &__location_wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+  }
+
+  &__icon {
+    color: $absolute-white;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__location {
+    font-size: $text-base;
+    color: $absolute-white;
+    margin-left: $space-2;
+  }
+
+  &__priceLabel {
+    font-size: $text-xs;
+    color: $grey-shades-50;
+  }
+
+  &__price {
+    font-size: $text-lg;
+    color: $absolute-white;
+  }
+}

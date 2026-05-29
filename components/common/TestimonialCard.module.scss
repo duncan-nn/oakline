@@ -1,0 +1,65 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+@use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+
+.card {
+  background: $grey-shades-10;
+  border: 1px solid $grey-shades-15;
+  border-radius: 16px;
+  padding: $space-5;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__stars {
+    display: flex;
+    gap: $space-1;
+    margin-bottom: $space-3;
+  }
+
+  &__star {
+    color: $gold;
+    font-size: 18px;
+  }
+
+  &__title {
+    // font-size: 18px;
+    // font-weight: 600;
+    margin-bottom: $space-2;
+  }
+
+  &__text {
+    // font-size: 14px;
+    // color: $grey-shades-60;
+    // line-height: 1.6;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    margin-top: $space-4;
+  }
+
+  &__avatar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semi-bold;
+    color: $absolute-white;
+  }
+
+  &__location {
+    font-size: $font-size-xs;
+    color: $grey-shades-50;
+  }
+}

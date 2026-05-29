@@ -1,0 +1,37 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+@use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+// @use '@/app/styles/abstracts/breakpoints' as *;
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid $grey-shades-20;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &__field {
+    flex: 1;
+    padding: $space-3;
+    background: transparent;
+    border: none;
+    color: $absolute-white;
+    font-size: 14px;
+
+    &::placeholder {
+      color: $grey-shades-50;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    padding: $space-3;
+    background: transparent;
+    color: $absolute-white;
+    cursor: pointer;
+  }
+}

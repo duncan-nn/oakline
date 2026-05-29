@@ -1,0 +1,109 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+@use "@/app/styles/abstracts/breakpoints" as *;
+
+.hero {
+  // padding: $space-8 $space-6;
+  // background: linear-gradient(to right, $grey-shades-08, $grey-shades-10);
+  width: 100%;
+
+  &__top {
+    width: 100%;
+    padding: $space-8 $space-6;
+    // background: linear-gradient(to right, $grey-shades-10, $grey-shades-08);
+    display: flex;
+    justify-content: center;
+    //border: 1px solid #fff;
+  }
+
+  &__content {
+    max-width: 800px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: $space-4;
+  }
+
+  &__desc {
+    text-align: center;
+    margin-bottom: $space-4;
+  }
+
+
+  &__bottom {
+    width: 100%;
+    background-color: $grey-shades-08;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    // align-content: center;
+    //border: 1px solid yellow;
+    padding: 0px 0px 20px 0px;
+    @include breakpoint(md) {
+      padding: 0px 30px 30px 30px;
+    }
+  }
+
+  &__search_wrap {
+    background-color: $grey-shades-15;
+    //border: 1px solid red;
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    @include breakpoint(md) {
+      width: 670px;
+    }
+    @include breakpoint(lg) {
+      width: 800px;
+    }
+  }
+
+  &__search {
+    width: 100%;
+    display: flex;
+    background-color: $grey-shades-10;
+    border-radius: 12px;
+    padding: $space-3;
+    margin-bottom: $space-4;
+  }
+
+  &__input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: $absolute-white;
+    outline: none;
+  }
+
+  &__btn {
+    background-color: $purple-shades-60;
+    color: $absolute-white;
+    padding: $space-3 $space-4;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    gap: $space-4;
+    flex-wrap: wrap;
+    background-color: $grey-shades-15;
+    //border: 1px solid red;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    @include breakpoint(md) {
+      padding: 20px;
+      border-radius: 20px 20px 20px 20px;
+    }
+  }
+}

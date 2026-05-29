@@ -1,0 +1,15 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $text-sm;
+  color: $grey-shades-40;
+
+  input {
+    accent-color: $purple-shades-60;
+  }
+}

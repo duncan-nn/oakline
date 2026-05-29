@@ -1,0 +1,38 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+
+  padding: $space-3;
+  border-radius: 10px;
+
+  background: $grey-shades-10;
+  border: 1px solid $grey-shades-15;
+
+  transition: all 0.2s ease;
+  cursor: context-menu;
+
+  &:hover {
+    border-color: $purple-shades-60;
+  }
+}
+
+.list__icon {
+  color: $purple-shades-60;
+  display: flex;
+}
+
+.list__text {
+  // font-size: $text-sm;
+  // color: $white-shades-90;
+}

@@ -1,0 +1,28 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+// @use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+
+.stats {
+  display: flex;
+  gap: $space-6;
+  padding-top: $space-4;
+  border-top: 1px solid $grey-shades-15;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.stats__label {
+  font-size: $text-sm;
+  color: $grey-shades-40;
+}
+
+.stats__value {
+  font-size: $text-lg;
+  font-weight: $font-weight-semi-bold;
+  color: $absolute-white;
+}

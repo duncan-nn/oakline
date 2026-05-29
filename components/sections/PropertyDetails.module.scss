@@ -1,0 +1,43 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+@use "@/app/styles/abstracts/breakpoints" as *;
+
+.section {
+  padding: $space-7 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-5;
+
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: $grey-shades-08;
+  border: 1px solid $grey-shades-15;
+  border-radius: 12px;
+
+  padding: $space-5;
+  height: max-content;
+}
+
+.card__title {
+//   font-size: $text-xl;
+//   font-weight: $font-weight-bold;
+  margin-bottom: 20px;
+}
+
+.card__text {
+//   font-size: $text-sm;
+//   color: $grey-shades-40;
+//   line-height: $line-height-base;
+  margin-bottom: $space-5;
+}

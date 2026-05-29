@@ -1,0 +1,42 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+@use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+@use '@/app/styles/abstracts/breakpoints' as *;
+
+.card {
+  padding: $space-5 $space-4;
+  border-radius: $radius-md;
+  background: $grey-shades-10;
+  border: 1px solid $grey-shades-15;
+  width: 100%;
+  @include breakpoint(sm) {
+    width: max-content;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: $font-weight-bold;
+    color: $absolute-white;
+    line-height: $line-height-base;
+    @include breakpoint(lg) {
+      font-size: 40px;
+    }
+    @include breakpoint(xl) {
+      font-size: 60px;
+    }
+  }
+
+  p {
+    font-size: $text-lg;
+    font-weight: $font-weight-medium;
+    color: $grey-shades-60;
+    line-height: $line-height-base;
+    @include breakpoint(md) {
+      font-size: 16px;
+    }
+    @include breakpoint(lg) {
+      font-size: 18px;
+    }
+  }
+}

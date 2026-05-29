@@ -1,0 +1,79 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+@use "@/app/styles/abstracts/breakpoints" as *;
+
+.section {
+  // padding: $space-8 0;
+}
+
+.container {
+  // max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.note {
+  padding: $space-3;
+  border: 1px solid $grey-shades-15;
+  border-radius: 8px;
+  background: $grey-shades-10;
+  font-size: $text-sm;
+  display: flex;
+  align-items: center;
+}
+.note_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $grey-shades-15;
+  //border: 1px solid #fff;
+  margin-right: 20px;
+  padding: 0 20px;
+  width: max-content;
+}
+.note_text {
+  font-size: 16px;
+  color: $grey-shades-60;
+  font-weight: $font-weight-regular;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-6;
+
+    @include breakpoint(md) {
+        grid-template-columns: 300px 1fr;
+    }
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+
+  span {
+    font-size: $text-sm;
+    color: $grey-shades-40;
+  }
+
+  h3 {
+    // font-size: $text-2xl;
+    // font-weight: $font-weight-bold;
+  }
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+}

@@ -1,0 +1,48 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+@use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+@use '@/app/styles/abstracts/breakpoints' as *;
+
+.section {
+  background: $grey-shades-08;
+
+  &__wrap {
+    width: 100%;
+    padding: $space-7 $space-6;
+    border-top: 1px solid $grey-shades-15;
+    border-bottom: 1px solid $grey-shades-15;
+
+    background-image: url('/images/bg-art.avif');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  // &__cta {
+  //   padding-bottom: $space-8;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   border-bottom: 1px solid $grey-shades-15;
+
+  //   @include breakpoint(md) {
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //     gap: $space-4;
+  //   }
+  // }
+
+  // &__title {
+  //   font-size: 28px;
+  //   font-weight: 600;
+  //   color: $absolute-white;
+  // }
+
+  &__text {
+    // font-size: 14px;
+    // color: $grey-shades-50;
+    margin-top: $space-2;
+    max-width: 600px;
+  }
+}

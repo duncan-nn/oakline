@@ -1,0 +1,30 @@
+@use '@/app/styles/abstracts/spacing' as *;
+@use '@/app/styles/abstracts/breakpoints' as *;
+@use '@/app/styles/abstracts/colors' as *;
+
+.section {
+  padding: 20px 10px;
+  background: $grey-shades-10;
+  @include breakpoint(md) {
+    padding: 20px 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: $grey-shades-08;
+  padding: $space-3 $space-3;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $space-4;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}

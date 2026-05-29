@@ -1,0 +1,29 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.field__label {
+  font-size: 18px;
+  color: $absolute-white;
+}
+
+.field__textarea {
+  padding: $space-3;
+  border-radius: 8px;
+  border: 1px solid $grey-shades-15;
+  background: $grey-shades-10;
+  color: $white-shades-90;
+  resize: none;
+
+  &:focus {
+    border-color: $purple-shades-60;
+    outline: none;
+  }
+}

@@ -1,0 +1,42 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+@use "@/app/styles/abstracts/breakpoints" as *;
+
+.group {
+  border: 1px solid $grey-shades-15;
+  border-radius: 12px;
+  padding: $space-5;
+  background: $grey-shades-08;
+
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+}
+
+.group__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.group__button {
+  background: transparent;
+  border: 1px solid $grey-shades-20;
+  padding: $space-2 $space-3;
+  border-radius: 8px;
+  color: $white-shades-90;
+  cursor: pointer;
+}
+
+.group__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-5;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+    gap: $space-6;
+  }
+}

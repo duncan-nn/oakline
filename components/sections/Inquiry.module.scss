@@ -1,0 +1,114 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use "@/app/styles/abstracts/spacing" as *;
+@use "@/app/styles/abstracts/typography" as *;
+@use "@/app/styles/abstracts/breakpoints" as *;
+
+.section {
+  // padding: $space-8 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-7;
+
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.title {
+//   font-size: $text-3xl;
+//   font-weight: $font-weight-bold;
+}
+
+.text {
+//   color: $grey-shades-40;
+//   font-size: $text-sm;
+//   line-height: $line-height-base;
+}
+
+.formCard {
+  background: $grey-shades-08;
+  border: 1px solid $grey-shades-15;
+  border-radius: 12px;
+  padding: 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+  @include breakpoint(md) {
+    padding: 30px 30px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.label {
+  font-size: 18px;
+  color: $absolute-white;
+}
+
+.property {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: $space-3;
+  border-radius: 8px;
+  background: $grey-shades-10;
+  border: 1px solid $grey-shades-15;
+  color: $white-shades-90;
+}
+
+.footer {
+    display: flex;
+    gap: $space-4;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.button {
+  background: $purple-shades-60;
+  color: $absolute-white;
+  padding: $space-3 $space-5;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  &:hover {
+    background: $purple-shades-65;
+  }
+}

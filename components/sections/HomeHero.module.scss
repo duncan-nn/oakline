@@ -1,0 +1,71 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+@use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+@use '@/app/styles/abstracts/breakpoints' as *;
+
+.hero {
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 0 auto;
+  gap: $space-6;
+  align-items: center;
+  // border: 1px solid #fff;
+
+  @include breakpoint(lg) {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.left {
+  padding: 80px 20px 30px 20px;
+  @include breakpoint(md) {
+    // padding-left: $space-8;
+    padding: 40px 20px 30px 20px;
+  }
+  @include breakpoint(lg) {
+    // padding-left: $space-8;
+  }
+  
+  &__left_h1 {
+    margin-bottom: $space-4;
+  }
+
+  &__left_p {
+    margin-bottom: $space-6;
+    max-width: 500px;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: $space-3;
+  margin-bottom: $space-6;
+}
+
+.stats {
+  display: flex;
+  gap: $space-3;
+  flex-wrap: wrap;
+}
+
+.right {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  @include breakpoint(lg) {
+    height: 700px;
+  }
+  @include breakpoint(xl) {
+    height: 600px;
+  }
+}
+
+.image {
+  object-fit: cover;
+}

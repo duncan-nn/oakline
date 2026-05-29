@@ -1,0 +1,122 @@
+@use "@/app/styles/abstracts/colors" as *;
+@use '@/app/styles/abstracts/typography' as *;
+@use '@/app/styles/abstracts/radius' as *;
+@use '@/app/styles/abstracts/spacing' as *;
+@use '@/app/styles/abstracts/breakpoints' as *;
+
+.footer {
+  background: $grey-shades-08;
+  // padding: $space-8 $space-6;
+  // border-top: 1px solid $grey-shades-15;
+  &__wrap {
+    width: 100%;
+    padding: $space-4 $space-3;
+    // border-top: 1px solid $grey-shades-15;
+  }
+
+  &__top {
+    padding: $space-7 0;
+    display: grid;
+    gap: $space-6;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+
+    @include breakpoint(lg) {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: $absolute-white;
+  }
+
+  &__links {
+    display: grid;
+    gap: $space-5;
+    // border: 1px solid #fff;
+    // display: flex;
+    // flex-direction: column;
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(lg) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    // @include breakpoint(md) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
+
+    // @include breakpoint(lg) {
+    //   grid-template-columns: repeat(5, 1fr);
+    // }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 16px;
+        color: $grey-shades-50;
+        margin-bottom: $space-1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: $absolute-white;
+  }
+
+  &__wrap_bottom {
+    background-color: $grey-shades-10;
+  }
+  &__bottom {
+    margin-top: $space-6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: $space-3;
+    font-size: 13px;
+    color: $grey-shades-50;
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__socials {
+    display: flex;
+    gap: $space-2;
+
+    span {
+      width: 32px;
+      height: 32px;
+      border: 1px solid $grey-shades-20;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background: $absolute-white;
+        color: $absolute-black;
+      }
+    }
+  }
+}
